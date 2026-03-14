@@ -1,6 +1,4 @@
-import { Product } from './types';
-
-export const SAMPLE_PRODUCTS: Product[] = [
+export const SAMPLE_PRODUCTS = [
   {
     id: '1',
     name: 'Classic Cloud9 T-Shirt',
@@ -38,7 +36,7 @@ export const SAMPLE_PRODUCTS: Product[] = [
     price: 79.99,
     category: 'shoes',
     image: 'https://via.placeholder.com/500x500?text=Cloud9+Sneakers',
-    sizes: ['6', '7', '8', '9', '10', '11', '12', '13'] as any,
+    sizes: ['6', '7', '8', '9', '10', '11', '12', '13'],
     colors: ['Black', 'White', 'Navy', 'Red'],
     stock: 25,
     rating: 4.9,
@@ -83,7 +81,7 @@ export const SAMPLE_PRODUCTS: Product[] = [
     price: 89.99,
     category: 'shoes',
     image: 'https://via.placeholder.com/500x500?text=High-Top+Sneakers',
-    sizes: ['6', '7', '8', '9', '10', '11', '12', '13'] as any,
+    sizes: ['6', '7', '8', '9', '10', '11', '12', '13'],
     colors: ['Black', 'White', 'Brown', 'Navy'],
     stock: 20,
     rating: 4.8,
