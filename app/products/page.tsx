@@ -7,13 +7,9 @@ import ProductCard from '@/components/ProductCard';
 import { SAMPLE_PRODUCTS } from '@/lib/products';
 import { ProductCategory } from '@/lib/types';
 import { Filter, X } from 'lucide-react';
-import { useSearchParams } from 'next/navigation';
 
 export default function ProductsPage() {
-  const searchParams = useSearchParams();
-  const categoryParam = searchParams.get('category') as ProductCategory | null;
-
-  const [selectedCategory, setSelectedCategory] = useState<ProductCategory | null>(categoryParam);
+  const [selectedCategory, setSelectedCategory] = useState<ProductCategory | null>(null);
   const [sortBy, setSortBy] = useState<'newest' | 'price-low' | 'price-high' | 'rating'>('newest');
   const [showFilters, setShowFilters] = useState(false);
 
@@ -81,7 +77,7 @@ export default function ProductsPage() {
                   </button>
                 </div>
 
-                {(showFilters || window.innerWidth >= 1024) && (
+                {showFilters && (
                   <>
                     {/* Category Filter */}
                     <div className="mb-6">

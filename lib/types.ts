@@ -1,5 +1,5 @@
 export type ProductCategory = 'tshirts' | 'shorts' | 'shoes';
-export type Size = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL';
+export type Size = 'XS' | 'S' | 'M' | 'L' | 'XL' | 'XXL' | '6' | '7' | '8' | '9' | '10' | '11' | '12' | '13';
 export type Color = string;
 
 export interface Product {
